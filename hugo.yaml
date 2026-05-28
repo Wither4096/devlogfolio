@@ -1,4 +1,132 @@
-baseURL: https://example.org/
-locale: en-us
-title: My New Hugo Project
+baseURL: https://wither4096.xyz/
+locale: en-gb
+title: Wither's Ward
 theme: ["PaperMod"]
+pagination:
+  pagerSize: 5
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Wither's Ward
+  description: "My devlog and portfolio website"
+  keywords: [blog, portfolio, papermod, software engineering, systems, embedded, electronics, low-level, devlog]
+  author: Wither4096
+  # author: ["Me", "You"] # multiple authors
+  # images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  mainSections:
+    - blog
+
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    disableFingerprinting: true
+    favicon: "favicon/favicon-dark.png"
+    favicon16x16: "favicon/favicon-dark-16.png"
+    favicon32x32: "favicon/favicon-dark-32.png"
+    apple_touch_icon: "favicon/favicon-dark.png"
+    # safari_pinned_tab: "<link / abs url>"
+
+  label:
+    text: "Wither's Ward"
+    icon: favicon/favicon-dark.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: Wither
+    subtitle: "systems, embedded, low-level dev"
+    imageUrl: "favicon/favicon-dark.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+      - name: Blog
+        url: blog
+      - name: Projects
+        url: projects
+
+  # home-info mode
+  homeInfoParams:
+    Title: "systems, embedded, low-level dev"
+    Content: "the mad corner of the internet"
+
+  socialIcons:
+    - name: email
+      url: "mailto:wither@wither4096.xyz"
+    - name: github
+      url: "https://github.com/wither4096"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/wither4096/devlogfolio/tree/main/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    - identifier: blog
+      name: blog
+      url: /blog/
+      weight: 10
+    - identifier: projects
+      name: projects
+      url: /projects/
+      weight: 20
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
