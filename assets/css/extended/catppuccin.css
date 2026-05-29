@@ -1,0 +1,48 @@
+:root {
+    --gap: 24px;
+    --content-gap: 20px;
+    --nav-width: 1024px;
+    --main-width: 720px;
+    --header-height: 60px;
+    --footer-height: 60px;
+    --radius: 8px;
+    
+    /* Light Theme: Catppuccin Latte */
+
+    --theme: rgb(239, 241, 245);            /* base */
+    --entry: rgb(230, 233, 239);            /* mantle */
+    --primary: rgb(76, 79, 105);            /* text */
+    --secondary: rgb(92, 95, 119);          /* subtext1 */
+    --tertiary: rgb(204, 208, 218);         /* surface0 */
+    --content: rgb(76, 79, 105);            /* text */
+    --code-block-bg: rgb(220, 224, 232);    /* crust */
+    --code-bg: rgb(230, 233, 239);          /* mantle */
+    --border: rgb(188, 192, 204);           /* surface1 */
+
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+
+    /* Dark Theme: Catppuccin Mocha */
+
+    --theme: rgb(30, 30, 46);           /* base */
+    --entry: rgb(24, 24, 37);           /* mantle */
+    --primary: rgb(205, 214, 244);      /* text */
+    --secondary: rgb(186, 194, 222);    /* subtext1 */
+    --tertiary: rgb(49, 50, 68);        /* surface0 */
+    --content: rgb(205, 214, 244);      /* text */
+    --code-block-bg: rgb(17, 17, 27);   /* crust */
+    --code-bg: rgb(49, 50, 68);         /* surface0 */
+    --border: rgb(69, 71, 90);          /* surface1 */
+
+    color-scheme: dark;
+}
+
+.list {
+    background: var(--code-bg);
+}
+
+[data-theme="dark"] .list {
+    background: var(--theme);
+}
