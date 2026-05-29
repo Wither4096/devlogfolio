@@ -17,7 +17,7 @@ minify:
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Wither's Ward
-  description: "My devlog and portfolio website"
+  description: "systems programming and tech yapping"
   keywords: [blog, portfolio, papermod, software engineering, systems, embedded, electronics, low-level, devlog]
   author: Wither4096
   # author: ["Me", "You"] # multiple authors
