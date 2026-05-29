@@ -4,11 +4,14 @@ draft: true
 title: "{{ replace .Name "-" " " | title }}"
 description: ""
 tags: ["projects"]
-
-repo: ""
-status: "wip"
-tech: []
+summary: ""
 ---
+
+## Project Info
+
+- **Status:** wip
+- **Tech:** 
+- **Repo:** [GitHub](https://github.com/wither4096/...)
 
 ## Overview
 
@@ -27,14 +30,12 @@ tech: []
 
 ## Media
 
+- 
+
 ## Features
 
 - 
 
-## What I learned
+## What I Learned
 
 - 
-
-## Links
-
-- Source: 

@@ -26,12 +26,12 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
-  ShowReadingTime: true
+  ShowReadingTime: false
   ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
-  ShowWordCount: true
+  ShowWordCount: false
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
   disableSpecial1stPost: false
@@ -120,11 +120,32 @@ menu:
       name: tags
       url: /tags/
       weight: 30
+    - identifier: source
+      name: source
+      url: https://github.com/wither4096/devlogfolio
+      weight: 40
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
+
+  goldmark:
+    renderer:
+     unsafe: true
+
+    extensions:
+      strikethrough: true
+      taskList: true
+      typographer: false
+
+      extras:
+        superscript:
+          enable: true
+        subscript:
+          enable: true
+
   highlight:
     noClasses: false
+    style: catppuccin-mocha
     # anchorLineNos: true
     # codeFences: true
     # guessSyntax: true
