@@ -25,8 +25,8 @@ The site will be available at `http://localhost:1313`
 
 ## Repository Structure
 
-| Directory    | Purpose                      |
-|--------------|------------------------------|
+| Directory     | Purpose                      |
+|---------------|------------------------------|
 | `archetypes/` | Content templates            |
 | `assets/`     | Theme customisations         |
 | `content/`    | Blog posts and project pages |
