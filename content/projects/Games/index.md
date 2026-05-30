@@ -2,7 +2,7 @@
 date: 2026-05-29T11:30:03+03:00
 title: "Games"
 description: "A collection of simple games remade in C++"
-tags: ["projects"]
+tags: ["project"]
 summary: "\"hey, I could do that\""
 ---
 

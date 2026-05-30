@@ -2,7 +2,7 @@
 date: 2026-05-29T11:29:49+03:00
 title: "μMonitor"
 description: "A university project improved"
-tags: ["projects"]
+tags: ["project"]
 summary: "Real Time ESP32 Room Monitoring System"
 ---
 
