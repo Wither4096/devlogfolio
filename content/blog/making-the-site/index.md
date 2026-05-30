@@ -1,6 +1,5 @@
 ---
 date: 2026-05-29T16:42:57+03:00
-draft: true
 title: "Making the Site"
 description: "how meta"
 tags: ["devlog","guide"]
