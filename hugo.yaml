@@ -56,7 +56,7 @@ params:
 
   label:
     text: "Wither's Ward"
-    icon: favicon/favicon-dark.png
+    icon: logo/logo-dark.png
     iconHeight: 35
 
   # profile-mode
